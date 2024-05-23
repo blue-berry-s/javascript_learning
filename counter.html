@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:rgb(105, 105, 215);
+            }
+            p{
+                text-align: center;
+                font-size: 8em;
+                color:white;
+                font-style: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 0 420px;
+            }
+            button{
+                transition: all 0.2s;
+                cursor: pointer;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: transparent;
+                font-size: 2em;
+                border-style: solid;
+                color:white;
+                border-color:white;
+                padding: 10px 20px;
+                border-width: 3px;
+                border-radius: 5px;
+
+            }
+
+            button:hover{
+                background-color: rgba(28, 19, 19, 0.2);
+            }
+        </style>
+    </head>
+    <body>
+        <p id="num"> 0 </p>
+        <div>
+            <button id="dec"> Decrease </button>
+            <button id="init"> Reset </button>
+            <button id="inc"> Increase </button>
+        </div>
+        
+    </body>
+
+    <script src="counter.js"></script>
+</html>
