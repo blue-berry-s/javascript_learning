@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+        <style>
+            h1{
+                font-size:4em;
+                font-family: Danfo;
+                margin: 0 0 2vh 0;
+                padding: 0 0 0 0;
+            }
+            
+            body{
+                font-family: Kanit;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(133, 205, 246);
+            }
+
+            h2{
+                margin: 0;
+            }
+
+            #time{
+                font-size: 4em;
+            }
+
+            button{
+                margin: 2vh 0 0 0;
+                width: 200px;
+                padding: 2px;
+                color:white;
+                background-color: black;
+                font-size: 20px;
+                font-family: Kanit;
+               
+            }
+
+            .crop{
+                display:flex;
+                flex:column;
+                object-position:center;
+                position: relative;
+                width: 400px;
+                height: 250px;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            #cat_pics{
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                position:absolute;
+                top:-40%;
+                
+            }
+
+            #alarm_text{
+                font-weight: bold;
+                font-size: 20px;
+                z-index: 5;
+                text-align: center;
+                color:white;
+                padding: 0 10px;
+                width: 350px;
+            }
+
+            #alarms_container{
+                margin-top: 2vh;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+
+            .alarm_menu_items{
+                padding: 1vh 0;
+            }
+
+
+
+            
+        </style>
+
+    </head>
+    <body>
+        <h1> LOLCAT CLOCK </h1>
+        <h2> I CAN HAZ TIME? </h2>
+        <h2 id="time"> XX:XX !</h2>
+
+        <div class="crop">
+            <img id="cat_pics" src="Lolcats_Images\regular.jpg">
+            <p id="alarm_text"> text placeholder </p>
+        </div>
+
+        <!-- Div used to adjust label positions-->
+        <div id = alarms_container>
+
+            <div class = "alarm_menu_items">
+                <label for="morning_times"> Select a Morning Alarm</label>
+
+                <select name="morning_times" id="morning_alarm">
+                    <option value="8-9"> 8AM - 9AM </option>
+                    <option value="9-10"> 9AM - 10AM </option>
+                    <option value="10-11"> 10AM - 11AM </option>
+                    <option value="11-12"> 11AM - 12PM </option>
+                    <option value="12-13"> 12PM - 1PM </option>
+                    <option value="13-14"> 1PM - 2PM </option>
+                    <option value="14-15"> 2PM - 3PM </option>
+                    <option value="15-16"> 3PM - 4PM </option>
+                </select>
+            </div>
+
+            <div class = "alarm_menu_items">
+                <label for="lunch_times"> Select a Lunch Alarm</label>
+
+                <select name="lunch_times" id="lunch_alarm">
+                    <option value="8-9"> 8AM - 9AM </option>
+                    <option value="9-10"> 9AM - 10AM </option>
+                    <option value="10-11"> 10AM - 11AM </option>
+                    <option value="11-12"> 11AM - 12PM </option>
+                    <option value="12-13"> 12PM - 1PM </option>
+                    <option value="13-14"> 1PM - 2PM </option>
+                    <option value="14-15"> 2PM - 3PM </option>
+                    <option value="15-16"> 3PM - 4PM </option>
+                </select>
+            </div>
+            
+            <div class = "alarm_menu_items">
+                <label for="nap_times"> Select a Nap Alarm</label>
+
+                <select name="nap_times" id="nap_alarm">
+                    <option value="8-9"> 8AM - 9AM </option>
+                    <option value="9-10"> 9AM - 10AM </option>
+                    <option value="10-11"> 10AM - 11AM </option>
+                    <option value="11-12"> 11AM - 12PM </option>
+                    <option value="12-13"> 12PM - 1PM </option>
+                    <option value="13-14"> 1PM - 2PM </option>
+                    <option value="14-15"> 2PM - 3PM </option>
+                    <option value="15-16"> 3PM - 4PM </option>
+                </select>
+            </div>
+            
+        </div>
+
+        <button id="party_button"> Party Time! </button>
+        
+    </body>
+
+    
+</html>
+
+<script src="LOLCat_Clock.js"></script>
