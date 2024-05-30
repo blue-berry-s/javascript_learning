@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+        <style>
+            body{
+                transition:background-color 0.5s;
+            }
+            h1,h2,p, label, button{
+                background-color: transparent;
+                font-family:Nunito;
+                color:white;
+                text-align: center;
+            }
+
+            h1{
+                font-weight:900;
+                font-size: 3em;
+            }
+
+            h2{
+                font-size: 6em;
+            }
+
+            .increase, .decrease{
+                cursor: pointer;
+                font-size: 2em;
+                font-weight: 900;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border-color:white;
+                border-width: 5px;
+                margin: 0 10px;
+                border-style: solid;
+                text-align: center;
+                line-height: 2px;
+
+            }
+
+            button:hover{
+                background-color: rgba(80, 79, 79, 0.1);
+            }
+            
+
+            #centre{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-evenly;
+                margin: 5vh;
+            }
+
+            #centre-buttons{
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                margin: 10vh 0;
+            }
+
+            #centre-buttons > button{
+                cursor: pointer;
+                border-color:white;
+                border-style:solid;
+                font-weight:600;
+                padding: 10px 30px;
+                border-width: 3px;
+                border-radius: 12px;
+                margin: 0 80px;
+            }
+
+            button:active{
+                background-color: rgba(248, 245, 245, 0.1);
+            }
+
+
+            body{
+                background-color: #e75e5e;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1> COUNT DOWN TIMER </h1>
+        <h2 id="timer"> 00:00:00 </h1>
+            <div id="centre">
+                <div class="button_containers">
+                    <button name="hour" class="increase"> + </button>
+                    <label for="hour"> Hour </label>
+                    <buttoN name="hour" class="decrease"> - </buttoN> 
+                </div>
+                <div class="button_containers">
+                    <button name="min" class="increase"> + </button>
+                    <label for="min"> Minute </label>
+                    <buttoN name="min" class="decrease"> - </buttoN> 
+                </div>  
+                <div class="button_containers">
+                    <button name="sec" class="increase"> + </button>
+                    <label for="sec"> Second </label>
+                    <buttoN name="sec" class="decrease"> - </buttoN> 
+                </div>                 
+            </div>
+
+            <div id="centre-buttons">
+                <button id="start"> Start </button>
+                <button id="stop"> Stop </button>
+                <button id="reset"> Reset </button>
+            </div>
+
+        <p id="endMessage"> Choose your time </p>
+
+    </body>
+</html>
+
+<script src="countdown.js"></script>
